@@ -27,6 +27,16 @@ body {
 
 /* PROJECTS */
 
+.project-github-link {
+  color: rgb(217, 130, 3);
+  text-decoration: none;
+}
+
+.project-live-link {
+  color: rgb(217, 130, 3);
+  text-decoration: none;
+}
+
 .project-container {
   display: flex;
   flex-wrap: wrap;
