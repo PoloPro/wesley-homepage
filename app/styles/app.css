@@ -3,6 +3,53 @@ body {
   background-color: rgb(249, 249, 249);
 }
 
+/* ABOUT ME */
+
+.contact-link {
+  color: rgb(130, 130, 130);
+  
+}
+
+.contact-link:hover {
+  color: rgb(216, 149, 23);
+  text-decoration: none;
+}
+
+#about-me {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+@media (min-width: 500px) {
+  #about-text {
+    padding-left: 30px;
+    max-width: 400px;
+  }
+}
+
+@media (max-width: 500px) {
+  #about-text {
+    margin-top: 20px;
+  }
+}
+
+#prof-pic {
+  border: 1px black solid;
+  border-radius: 5px;
+  width: 100%;
+  max-width: 250px;
+}
+
+#about-contact {
+  margin-top: 20px;
+}
+
+#about-link {
+ font-family: 'Titillium Web', sans-serif;
+ font-size: 18px;
+ color: rgb(217, 130, 3);
+}
+
 /* SKILLS */
 
 #skills {

@@ -6,7 +6,9 @@ const Router = Ember.Router.extend({
 });
 
 Router.map(function() {
-  this.route('about');
+  this.route('about', function() {
+    this.route('contact');
+  });
   this.route('projects');
   this.route('skills');
   this.route('resume');

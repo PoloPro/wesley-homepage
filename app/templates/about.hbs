@@ -1,6 +1,28 @@
-<div id="about-me"> 
+<div id="about-me">
 
-  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt eaque cupiditate nisi eligendi voluptatem, at, aliquid maxime quaerat nemo nam, error. Rem facilis omnis corporis ducimus ut provident odio necessitatibus.</p>
+  <div id="about-pic">
+    <img id="prof-pic" src="images/profile-picture-crop.jpg" />
+  </div>
 
-  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum incidunt, ipsam officiis natus aperiam error repudiandae ipsum voluptates, doloribus rem voluptate quaerat pariatur molestias voluptatibus assumenda autem in iste tenetur.</p>
+  <div id="about-text">
+    <p>My name is Wes.</p>
+
+    <p>I'm a full-stack web developer experienced in Ruby on Rails and Javascript, including the Ember.js and React.js frameworks.</p>
+
+    <p>In my previous life, I was a solar engineer, and I still am passionate about emerging technologies and sustainable energy.</p>
+
+    <div id="about-contact">
+      <a id="about-link" href="https://github.com/PoloPro" target="_blank">Github</a>
+      &nbsp; | &nbsp;
+      <a id="about-link" href="https://medium.com/@WesleyDavis" target="_blank">Blog</a>
+      &nbsp; | &nbsp;
+      {{#link-to "about.contact" id="about-link"}}Contact Me
+      {{/link-to}}
+    </div>
+  </div>
+
+</div>
+
+<div id="about-contact">
+  {{outlet}}
 </div>
