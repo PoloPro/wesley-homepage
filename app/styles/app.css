@@ -29,6 +29,7 @@ body {
 
 .project-container {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .project-hover {
@@ -37,10 +38,17 @@ body {
   width: 300px;
   height: 250px;
   z-index: 100;
+  font: bold 18px sans-serif #000;
 }
 
-.project-desc {
-  padding-left: 30px;
+@media (min-width: 500px) {
+  .project-desc {
+    padding-left: 30px;
+  }
+}
+
+.project-text {
+  max-width: 400px;
 }
 
 .project-title {
