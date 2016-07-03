@@ -6,23 +6,36 @@
     <h2 id="name-header">Wesley Davis</h2>
     <ul class="list-inline top-nav-wrapper">
       <li class="list-inline-item">
-        <a class="top-nav-link" href="#about-me">about me</a>
+        {{#link-to 'about' class='top-nav-link'}}
+        about me
+        {{/link-to}}
       </li>
       |
       <li class="list-inline-item">
-        <a class="top-nav-link" href="#projects">projects</a>
+        {{#link-to 'projects' class='top-nav-link'}}
+        projects
+        {{/link-to}}
       </li>
       |
       <li class="list-inline-item top-nav-link">
-        <a class="top-nav-link" href="#resume">resume</a>
+       {{#link-to 'resume' class='top-nav-link'}}
+        resume
+        {{/link-to}}
       </li>
       |
       <li class="list-inline-item top-nav-link">
-        <a class="top-nav-link" href="#skills">skills</a>
+        {{#link-to 'skills' class='top-nav-link'}}
+        skills
+        {{/link-to}}
       </li>
     </ul>
   </div>
   {{!-- End top navbar --}}
 
+  <hr>
+  <br>
+  
   {{outlet}}
+
+  <br>
 </div>
